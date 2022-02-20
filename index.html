@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+        <div class=><button class="back-btn" id="backButton">🡸</button></div>
+        <div class="landing-page" id="landingPage">  
+            <h1>Welcome!</h1>
+            <p>
+                Here we have a modified version of Rock, Paper, Scissors with the introduction
+                of two new options, Lizard and Spock. This game has appeared in a popular sit-com
+                called "THE BIG BANG THEORY".
+            </p>
+            <button id="startBtn">START</button>
+        </div>
+        <div class="original-game" id="gamePage">
+            <div class="upper">
+                <div class="lhs">
+                    <h4>Wins : <span id="playerWinCounter">0</span> </h4>
+                    <div class="card-display"> <span id="playerSelectionDisplay">Player Card</span> <img id="playerIcon" src=""> </div>
+                </div>
+                <div class="middle">
+                    <h4>Draw : <span id="drawCounter">0</span></h4>
+                    <h4>Rounds : <span id="totalRoundsCounter">0</span></h4>
+                </div>
+                <div class="rhs">
+                    <h4>Wins : <span id="computerWinCounter">0</span></h4>
+                    <div class="card-display"> 
+                        <span class="selectOptionDisplay" id="computerSelectionDisplay">Computer Card</span> 
+                        <img id="computerIcon" src="" >
+                        <div class="lds-ellipsis" id="loading"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="play-btn">
+                    <button id="rockOption"><img src="./rock (1).png" alt="" srcset=""></button>
+                    <button id="paperOption"><img src="./paper.png" alt="" srcset=""></button>
+                    <button id="scissorOption"><img src="./scissors.png" alt="" srcset=""></button>
+                    <button id="lizardOption"><img src="./lizard.png" alt="" srcset=""></button>
+                    <button id="spockOption"><img src="./spock.png" alt="" srcset=""></button>
+                </div>
+                <div class="reset" id="resetButton">
+                    <button>RESET</button>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>

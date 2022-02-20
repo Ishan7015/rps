@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%);
+}
+
+.landing-page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%);
+}
+
+.landing-page h1{
+  font-size: 100px;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  color: #66fcf1;
+}
+
+.landing-page p{
+  color: #c5c6c7;
+  width: 50%;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.landing-page button{
+  cursor: pointer;
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #6689fc2c;
+  border: 3px solid #66fcf1;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.landing-page button:hover{
+  background-color: #7a95ee56;
+}
+
+
+
+
+
+
+
+
+.original-game{
+  background: linear-gradient(90deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%);
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper{
+  display: flex;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  color: #c5c6c7;
+}
+
+.card-display{
+  width: 400px;
+  height: 400px;
+  background-color: #6689fc2c;
+  border: 5px solid;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+h4{
+  font-size: 1.5vw;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5vw;
+  min-width: 200px;
+}
+
+.lhs, .rhs{
+  margin: 2vw;
+}
+
+.lower{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower .play-btn img{
+  width: 75%;
+  height: 75%;
+}
+
+.lower .play-btn button{
+  cursor: pointer;
+  border-radius: 15%;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: #45a29e;
+  border: 3px solid #66fcf1;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.lower .play-btn button:hover{
+  background-color: #45a29d98;
+}
+
+.reset button{
+  cursor: pointer;
+  margin: 30px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #6689fc2c;
+  border: 3px solid #66fcf1;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reset button:hover{
+  background-color: #7a95ee56;
+}
+
+.back-btn{
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  z-index: 500;
+  border: none;
+  color: white;
+  width: 100px;
+  margin: 15px;
+}
+
+
+
+
+
+.lds-ellipsis {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

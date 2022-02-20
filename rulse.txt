@@ -1,0 +1,11 @@
+Scissors cut Paper
+paper covers rock
+rock crush lizard
+lizard poisons spock
+spock smashes Scissors 
+scissors dicapitate lizard
+lizard eats paper
+paper disporves spock
+spock vaporizes rock
+rock crush scissors
+
